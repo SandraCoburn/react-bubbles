@@ -35,9 +35,8 @@ const ColorList = ({ colors, updateColors, ...props }) => {
       .put(`/api/colors/${colorToEdit.id}`, colorToEdit)
       .then(res => {
         console.log("to edit", res);
-        // setColorToEdit(res.data);
+        window.location.reload();
 
-        // updateColors([...colors]);
         setEditing(false);
       });
     // Make a put request to save your updated color
@@ -47,6 +46,7 @@ const ColorList = ({ colors, updateColors, ...props }) => {
   console.log("colors after edit", colors);
   const deleteColor = color => {
     axiosWithAuth().delete(`/api/colors/${color.id}`);
+    window.location.reload();
     // props.history.push("/protected");
 
     // make a delete request to delete this color
@@ -141,7 +141,7 @@ const ColorList = ({ colors, updateColors, ...props }) => {
             />
           </label>
           <div className="button-row">
-            <button type="submit">save</button>
+            <button type="submit">Add Color</button>
             <button>cancel</button>
           </div>
         </form>

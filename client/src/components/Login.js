@@ -25,24 +25,28 @@ const Login = props => {
   // when you have handled the token, navigate to the BubblePage route
   return (
     <>
-      <h1>Welcome to the Bubble App!</h1>
-      <form onSubmit={login}>
-        <label htmlFor="username">Username: </label>
-        <input
-          type="text"
-          name="username"
-          value={credentials.username}
-          onChange={handleChange}
-        />
-        <label htmlFor="password">Password:</label>
-        <input
-          type="password"
-          name="password"
-          value={credentials.password}
-          onChange={handleChange}
-        />
-        <button>Login</button>
-      </form>
+      <div>
+        <h1>Welcome to the Bubble App!</h1>
+      </div>
+      <div>
+        <form onSubmit={login}>
+          <label htmlFor="username">Username: </label>
+          <input
+            type="text"
+            name="username"
+            value={credentials.username}
+            onChange={handleChange}
+          />
+          <label htmlFor="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            value={credentials.password}
+            onChange={handleChange}
+          />
+          <button>Login</button>
+        </form>
+      </div>
     </>
   );
 };

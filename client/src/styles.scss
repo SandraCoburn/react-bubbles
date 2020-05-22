@@ -19,7 +19,13 @@ body,
     height: 100%;
   }
 }
-
+h1 {
+  text-align: center;
+  margin-left: 20%;
+}
+.title {
+  align-content: center;
+}
 .spacer {
   height: 100%;
 }
@@ -81,6 +87,7 @@ form {
 
   input {
     width: 100px;
+    padding: 4px 36px 4px 40px;
   }
 }
 

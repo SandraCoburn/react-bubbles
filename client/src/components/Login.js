@@ -25,7 +25,7 @@ const Login = props => {
   // when you have handled the token, navigate to the BubblePage route
   return (
     <>
-      <div>
+      <div className="title">
         <h1>Welcome to the Bubble App!</h1>
       </div>
       <div>
